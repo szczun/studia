@@ -1,0 +1,9 @@
+#Digilent WaveForms Voltmeter
+#Device Name: Discovery2
+#Serial Number: SN:210321B211C7
+#Date Time: 2024-12-03 12:33:25.249
+
+,Channel 1,Channel 2
+DC,2.1758,8.546100000000001
+True RMS,2.1758,8.546100000000001
+AC RMS,0.0016,0.002

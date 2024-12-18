@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88980ae862220e9e7eb0f1b4316b9deb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88980ae862220e9e7eb0f1b4316b9deb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88980ae862220e9e7eb0f1b4316b9deb = L.map(
+                "map_88980ae862220e9e7eb0f1b4316b9deb",
+                {
+                    center: [50.0625, 19.923],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b7e4cf8f3c870d579c2ee69db714fd3a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b7e4cf8f3c870d579c2ee69db714fd3a.addTo(map_88980ae862220e9e7eb0f1b4316b9deb);
+        
+    
+            var heat_map_db605d3d6cb87aa808fc9227fbd000bd = L.heatLayer(
+                [[50.0656149, 19.9139996, 67.2], [50.0655038, 19.9139567, 56.2], [50.0654074, 19.9139166, 52.800000000000004], [50.0653039, 19.9138793, 58.69999999999999], [50.0651937, 19.9138444, 57.9], [50.0650964, 19.9138037, 52.2], [50.064997, 19.9137637, 52.09999999999999], [50.0648898, 19.913725, 51.9], [50.0647383, 19.9138015, 53.6], [50.0636139, 19.9138938, 46.4], [50.06358, 19.9140645, 50.6], [50.0636463, 19.9142522, 46.1], [50.0636945, 19.914448, 46.8], [50.0636205, 19.9145258, 47.6], [50.0635155, 19.9145513, 46.8], [50.0634156, 19.9145795, 46.6], [50.0633269, 19.9145339, 46.4], [50.063241, 19.9144746, 45.6], [50.0631621, 19.9144467, 50.89999999999999], [50.0630887, 19.9144939, 47.8], [50.0630474, 19.9147106, 52.70000000000001], [50.0630044, 19.9149949, 46.6], [50.0629459, 19.9152685, 45.8], [50.0628925, 19.9155555, 47.7], [50.0628555, 19.9157406, 46.0], [50.0628227, 19.9159753, 46.0], [50.0627944, 19.9161759, 47.7], [50.0627627, 19.9164842, 46.0], [50.0627169, 19.9169058, 48.3], [50.0624944, 19.9171542, 45.9], [50.0624135, 19.9175243, 45.7], [50.0625582, 19.9178757, 46.1], [50.062782, 19.9179803, 46.29999999999998], [50.0630093, 19.9177952, 47.7], [50.0629759, 19.9170847, 47.1], [50.0628733, 19.917637, 46.8], [50.062782, 19.9177014, 46.2], [50.0626632, 19.9176531, 45.2], [50.0625978, 19.9175055, 46.800000000000004], [50.0626529, 19.9173393, 44.9], [50.0627493, 19.9172293, 46.3], [50.0628681, 19.9172856, 49.9], [50.0629593, 19.9174439, 50.6], [50.0631453, 19.9174009, 50.8], [50.0632865, 19.9173688, 50.6], [50.0634156, 19.917468, 48.099999999999994], [50.0635072, 19.9176218, 49.2], [50.0636088, 19.9177921, 50.699999999999996], [50.0636923, 19.9179624, 52.8], [50.0637707, 19.9181335, 52.29999999999999], [50.0638706, 19.9182596, 51.5], [50.063998, 19.9183508, 54.7], [50.0640919, 19.9183954, 53.8], [50.0642029, 19.918445, 53.9], [50.0642873, 19.9184772, 55.4], [50.0643863, 19.918508, 60.5], [50.0644857, 19.9185592, 68.4], [50.0645741, 19.9185701, 69.4], [50.0646172, 19.9183086, 67.3], [50.0646774, 19.9180391, 69.3], [50.0647336, 19.917778, 69.6], [50.0648041, 19.9175382, 68.7], [50.0648702, 19.9172793, 71.00000000000001], [50.0649416, 19.9169822, 68.4], [50.0650122, 19.9166503, 69.1], [50.0650841, 19.9163798, 72.4], [50.0651534, 19.916087, 72.1], [50.0652139, 19.915816, 57.2], [50.0653027, 19.9154449, 68.6], [50.0653717, 19.9151369, 64.2], [50.0654192, 19.9149346, 65.4], [50.0654691, 19.9147039, 70.5], [50.0655156, 19.9144907, 70.8], [50.0655466, 19.9143351, 64.7], [50.0655829, 19.9141941, 67.1]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            );
+        
+    
+            heat_map_db605d3d6cb87aa808fc9227fbd000bd.addTo(map_88980ae862220e9e7eb0f1b4316b9deb);
+        
+</script>
+</html>

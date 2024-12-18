@@ -1,0 +1,71 @@
+27 strona 2 chapter
+
+Scenariusz:
+
+1. Czym będziemy dokonywali pomiarów natężenia dźwięku i jaka jest alternatywna metoda.
+2. Czy da się skutecznie robić pomiary telefonem i jakie są zalety i wady.
+3. Czy aplikacja, platforma i poziom natężenia dźwięku są ze sobą w jakiś sposób skorelowane?
+4. Tworzenie mapy dźwięku
+
+A-weighting
+Warunki pogodowe
+
+
+
+
+1 SLAJD
+
+Metod pomiar hałasu jak mówi ksiazka Environmetnal Noise Pollution, którymi autorami są E.Murphy i King którzy defacto
+podczas robienia reasearchu ciągle się przewijali w cytowaniach na temat pomiarów hałasu mówią, że jeżeli mieli by rozwijać
+temat pomiaru halasu to trzeba by było stworzyć nowa ksiazke bo temat jest szeroko omawiany. Ja wybrałem trzy rodzaje urządzeń
+którymi z reguly oceniamy poziom natężenia dzwieku i każdy z nich ma trochę inne zastosowanie.
+
+2 SLAJD
+
+Po waszej lewej stronie znajduje się urządzenie typu SLM (sound level meter) i sluzy ono z reguły do pomiarów służących ocenie
+danego sprzętu, jest to takie trochę urządzenie referencyjne i bada to tylko dźwięki jakby live, nie używa żadnych algorytmów
+do uśredniania poziomu natężenia dźwięku
+
+Bo właśnie tym zajmuje się urządzenie po prawej ISLM czyli integrating SLM więc z automatu jest to idealne urządzenie do pomiarów
+okresowych i w miejscach gdzie natężenie dźwięku zmienia się w dosyć chaotyczny sposób. W środku siedzi algorytm, który liczy taką 
+całke poniżej. Wprowadzone oznaczenie L_eq jest powszechnie używane w badaniach dotyczących pomiaru natężenia dźwięku, oznacza on że nasz
+pomiar w okresie duże "t" zachowuje się jakby był ciągłym sygnałem o danej wartości.
+
+
+-- co ciekawe w polskiej literaturze jest o tym na tyle mało napisane, że wpisując fraze ISLM z reguły poprawiało mi na ISLAM--
+
+I ostatnim takim profesjonalnym urządzeniem, którego się używa do oceny pomiaru dzwieku jest Noise Dosimeter, na polski znalazłem tłumaczenie
+dozymetr akustyczny ale nie wiem ostatecznie czy takie tłumaczenie funkcjonuje w naukowym żargonie, jest on w działaniu podobny do ISLM ale ten jest
+przeznaczony do pomiaru hałasu na który są narażeni pracownicy w swoim miejscu pracy, taki personalny zbieracz dźwięku który jest stosowany w celach
+monitorowania właśnie tego jak pracownicy hut, linii produkcyjnych placów budowy etc. są narażeni na hałas
+
+3 SLAJD
+
+Warto jeszcze wspomnieć o jednostcę, w której mierzy się hałas w środowisku dBA. Tak jak jest napisane i pokazane na slajdzie jest to krzywa, która pokazuje jak ludzkie ucho reaguje na dźwięk w zależności od częstotliwości. Badanie zostało przeprowadzone w 30r XX wieku, a wyglądało to w taki sposób
+że brano osobę puszczano jej ton o jakiejś wartości X dB w jakiejś częstotliwości, a następnie puszczano ten sam ton w innej częstotliwości i kazano
+oceniać czy to jest głośniejsze czy cichsze etc. Dzięki tym badaniom się dowiedziano, że dźwięk o natężeniu 65 dB gdy jest w częstotliwości 100 hz jest dla człowieka o 20 dB cichszy niż ten w częstotliwości 1000 hz
+
+Jednak wszystkie urządzenia przed chwila omówione kosztują swoje, a że jesteśmy studentami to nas nie stać więc musimy skorzystać z jakiejś tańszej a
+najlepiej darmowej alternatywy. Tutaj z pomocą przychodzą smartphony.
+
+4 SLAJD
+
+Obecnie na rynku jak wiadomo królują telefony z systemami iOS albo android, więc wszelkie badania naukowe które badały dokładność pomiarów smartphonami były skupione wokół
+tych dwóch platform
+
+5 SLAJD
+
+Materiał, który pomógł w dobraniu odpowiedniej aplikacji został stworzony w 2019 roku i tutaj macie tak na prawdę najważniejszy fragment z niego.
+
+OMÓWIENIE WYKRESÓW
+s
+Badanie polegało na wyborze 5 różnych telefonów z systemem iOS i 5 z systemem Androidowym oraz wyborach aplikacji. Na iOS i android dwie aplikacje były takie same, Decibel X i Noise Exposure, na dole o ile widać jest podpisany ten wykres i na osi X-owej numerkami są zonaczone te aplikacje. Cztery wykresy są dlatego, że testowano dla różnych wartości natężenia dźwięku, gdzie przerywaną linią macie urządzenie referencyjne czyli po prostu wcześniej omawiany SLM. Generalnie iOSowe aplikacje wypadły lepiej, miały o wiele mniejsze odchylenia standardowe i co najważniejsze, dla im wyższych wartościach natężenia dźwięku androidowe aplikacje zaniżały odczyty co jest złym znakiem bo jednak interesuje nas bardziej dokładny pomiar dla wartości 90dBA i wyższych dlatego że to powoduje zanieczyszczeie hałasem. IPhone'y zawyżały lekko notowania ale lepiej już w tę stronę niż w drugą i widać wyraźnie, że większość aplikacji oprócz Noise Exposure na iOS jest całkiem blisko poziomu referencyjnego.
+
+PODSUMOWANIE
+
+Praca ta pomogła wybrać aplikację do pomiarów, moglibyście pomyśleć że pewnie aplikacja nr 5 na iOS została wybrana bo ma najlepsze wyniki, lecz nie. Powód jest prosty jest płatna, w trakcie wykonywania tych badań była bezpłatna dlatego tam się znalazła, kosztuje chyba 40zł. Za to druga aplikacja DecibelX została wybrana, jest także płatna ale 
+płatność jest tygodniowa i wynosi 2 dolary ale posiada darmową okrojoną wersję która niestety pozwala tylko na 30 sekundowe pomiary co jest raczej za krótko. W tej sprawie trzeba będzie jeszcze się skonsultować.
+
+6 SLAJD
+
+

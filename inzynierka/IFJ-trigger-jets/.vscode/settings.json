@@ -65,6 +65,8 @@
         "muon_pt.C": "cpp",
         "jet_muon.C": "cpp",
         "jet_hlt_jet_rec.C": "cpp",
-        "jet_hlt_jet_reco.C": "cpp"
+        "jet_hlt_jet_reco.C": "cpp",
+        "trigger_efficiency.C": "cpp",
+        "trigger_diff.C": "cpp"
     }
 }
